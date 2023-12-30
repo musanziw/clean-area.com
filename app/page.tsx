@@ -1,7 +1,9 @@
+import Hero from "@/app/components/Hero";
+
 export default function Home() {
-  return (
-    <main className={'h-screen justify-center items-center'}>
-      <h2>Home holp</h2>
-    </main>
-  )
+    return (
+        <main className={'relative'}>
+            <Hero/>
+        </main>
+    )
 }
