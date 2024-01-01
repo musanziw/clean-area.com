@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active div:first-child {
+    @apply rotate-45 translate-y-1.5
+}
+
+.active div:last-child {
+    @apply -rotate-45 -translate-y-1
+}
