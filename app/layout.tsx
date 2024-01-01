@@ -1,9 +1,12 @@
 import type {Metadata} from "next";
-import {DM_Sans} from "next/font/google";
+import {Roboto} from "next/font/google";
 import "./globals.css";
 import {ReactNode} from "react";
 
-const dmSans = DM_Sans({subsets: ["latin"]});
+const roboto = Roboto({
+    subsets: ["latin"],
+    weight: ["100", "300", "400", "500", "700", "900"]
+});
 
 export const metadata: Metadata = {
     title: "Clean Area | Trouvez des nounous et des baby-sitters près de chez vous",
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: ReactNode }) {
     return (
         <html lang="en">
-        <body className={dmSans.className}>
-            {children}
+        <body className={roboto.className}>
+        {children}
         </body>
         </html>
     );
