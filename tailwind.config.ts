@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'hero': "url('/hero.webp')",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
